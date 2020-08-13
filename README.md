@@ -342,10 +342,10 @@ Taking advantage of Python's multiprocessing, I created a program that can fire 
 
 The reinforcement learning agent will be Player 2 (O), while Player 1 (X) will be a `OneStepPolicy`, so it makes sense that Player 1 wins more often at the beginning but its win rate decreases as Player 2 gains experience and learns to block Player 1. Below I plotted the win rate of Player 1 for some combinations of the parameters:
 
-<img src="ttt/ttt_player2_l2_n8.png" width="400px">
-<img src="ttt/ttt_player2_l3_n16.png" width="400px">
-<img src="ttt/ttt_player2_l4_n32.png" width="400px">
-<img src="ttt/ttt_player2_l5_n32.png" width="400px">
+<img src="images/ttt_player2_l2_n8.png" width="400px">
+<img src="images/ttt_player2_l3_n16.png" width="400px">
+<img src="images/ttt_player2_l4_n32.png" width="400px">
+<img src="images/ttt_player2_l5_n32.png" width="400px">
 
 Looking at the names of each plot on the legend, I have used the following notation: `ttt_player2_l2_n8_a0.01_e100_i1000` means that, for that configuration, I have used a Neural Net with 2 layers, 8 neurons per layer, a learning rate of 0.01, performed one step of gradient descent after 100 episodes and performed 1000 steps of gradient descent. Logically, those configurations with a value of e of 10, instead of 100, will be trained on one tenth of the episodes. For many configurations we ended up with a Player 1 win rate of 0 or very close to 0. This is remarkable, since Player 1 is not using a completely random policy, but a policy that will take a win if it's possible on the next move.
 
