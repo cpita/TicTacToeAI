@@ -11,7 +11,7 @@ Reinforcement Learning generally uses [Markov Decision Processes](https://en.wik
 
 ![MDP](https://miro.medium.com/max/1000/1*4EYA7briZGjnnhqct-tgXw.png)
 
-Basically, they consist of an **agent** that interacts with an **environment**. In our case, the agent is the Player 1 (X) and the environment is everything else in the game, including the opponent. The agent can receive information about the current state of the environment, which we call **state**. This is essentially a representation of the environment in a specific moment of time. We will represent the state as a vector of nine numbers, where a 1 corresponds to a cell where there's an X, a -1 corrresponds to a cell where there's an O and 0 corresponds to an empty cell. Hence, this is how the following board configurations will be represented:
+Basically, they consist of an **agent** that interacts with an **environment**. In our case, the agent is the Player 1 (X) and the environment is everything else in the game, including the opponent. The agent can receive information about the current state of the environment, which we call **state**. This is essentially a representation of the environment at a specific moment of time. We will represent the state as a vector of nine numbers, where a 1 corresponds to a cell where there's an X, a -1 corrresponds to a cell where there's an O and 0 corresponds to an empty cell. Hence, this is how the following board configurations will be represented:
 
 
 <img src="images/000000000.png" width="150px">
