@@ -122,7 +122,7 @@ The return is thus given by <img src="https://render.githubusercontent.com/rende
 
 In order to assign a value to an afterstate we will just use the average of the returns that have been observed on that afterstate over many simulations. If we sample enough episodes, say 100,000; then most of the afterstates will have been visited a large number of times, so the average of the returns will give us a pretty accurate estimate of the true value.
 
-As the number of possible afterstates in TicTacToe is fairly small (between 2000 and 3000 I believe), we can use these estimates as the value function. However, many other problems can have millions or billions of afterstates, so using these estimates can result in very poor behaviour, as they are not very accurate. In these cases we have to use [Value Function Approximation](https://en.wikipedia.org/wiki/Function_approximation), which allows us to generalize and perform well in states that we have seldom visited or not at all.
+As the number of possible afterstates in TicTacToe is fairly small (in the thousands), we can use these estimates as the value function. However, many other problems can have millions or billions of afterstates, so using these estimates can result in very poor behaviour, as they are not very accurate. In these cases we have to use [Value Function Approximation](https://en.wikipedia.org/wiki/Function_approximation), which allows us to generalize and perform well in states that we have seldom visited or not at all.
 
 While it is perfectly valid to use the Monte Carlo estimates as our Value Function in TicTacToe, I will show how we can use Value Function Approximation so that we can apply these techniques to more complex environments.
 
