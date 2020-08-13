@@ -56,7 +56,7 @@ Now that we know how to represent states, actions and rewards, we have to figure
 
 We will do this by evaluating afterstates and choosing the best one. An afterstate is the representation of the board right after the agent has made its move, but before the opponent has. This solves the issue of trying to estimate the environment's dynamics: when the agent chooses an action, it doesn't know what the next state will be (because the next state depends on the opponent's move), but it does know what the afterstate will be.
 
-Given the state<img src="ttt/-110-11100-1.png" width="80px"> we can consider three different afterstates, each resulting after one of the possible actions:
+Given the state<img src="images/-110-11100-1.png" width="80px"> we can consider three different afterstates, each resulting after one of the possible actions:
 
 <img src="https://render.githubusercontent.com/render/math?math=A_t=2" width="40px">
 <img src="images/-111-11100-1.png" width="80px">
